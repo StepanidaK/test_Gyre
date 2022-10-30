@@ -26,6 +26,7 @@ class Test_Gyre (unittest.TestCase):
         registration_by_Twitch.click()
 
         self.assertEqual(self.driver.title, "Войти - Twitch")
+        print('Войти - Twitch')
 
         input_name = self.driver.find_element(By.XPATH, '//input[@id="login-username"]')
         input_name.send_keys('test_nida')
